@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.concurrent.*;
 
 /**
- * Collects camera data from a start url in multithreaded mode.
+ * Collects camera data from the start url in multithreaded mode.
  *
  * @author AndrewMs
  * @version 2.0
@@ -21,8 +21,8 @@ public class CamsInfoAggregator {
 
     /**
      * Parses first page with source's and token's data URLs.
-     * Runs asynchronous task for each URL.
-     * Collects results into a string.
+     * Runs an asynchronous task for each URL.
+     * Collects the results into a string.
      * @return List of strings with aggregated cam's information
      */
     public String getInfo() {

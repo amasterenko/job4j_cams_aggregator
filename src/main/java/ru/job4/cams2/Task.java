@@ -7,7 +7,7 @@ import java.util.concurrent.Callable;
 import java.util.stream.Collectors;
 
 /**
- * The class is using for asynchronous getting a content of sourceDataUrl and tokenDataUrl pages.
+ * The class is using for asynchronous getting the content of sourceDataUrl and tokenDataUrl pages.
  *
  * @author AndrewMs
  * @version 2.0
@@ -20,7 +20,7 @@ public class Task implements Callable<List<String>> {
     }
 
     /**
-     * Gets content of an URL's page.
+     * Gets content of the URL's page.
      * @return List of strings without parentheses
      */
 

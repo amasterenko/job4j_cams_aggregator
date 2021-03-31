@@ -23,7 +23,7 @@ public class HttpClient {
         this.url = url;
     }
     /**
-     * Gets a response for specified url
+     * Receives a response at the specified url
      *
      * @return List of strings
      * @throws IOException IO Exception
