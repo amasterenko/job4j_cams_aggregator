@@ -1,4 +1,4 @@
-package ru.job4.cams2;
+package ru.job4j.cams2;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -7,7 +7,7 @@ import java.util.concurrent.Callable;
 import java.util.stream.Collectors;
 
 /**
- * The class is using for asynchronous getting the content of sourceDataUrl and tokenDataUrl pages.
+ * The class is using for asynchronous getting the content of sourceDataUrl and tokenDataUrl.
  *
  * @author AndrewMs
  * @version 2.0
@@ -20,8 +20,8 @@ public class Task implements Callable<List<String>> {
     }
 
     /**
-     * Gets content of the URL's page.
-     * @return List of strings without parentheses
+     * Gets content from the URL.
+     * @return List of strings without parentheses.
      */
 
     @Override

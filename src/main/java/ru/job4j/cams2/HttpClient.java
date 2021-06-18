@@ -1,4 +1,4 @@
-package ru.job4.cams2;
+package ru.job4j.cams2;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * The class implements url-connection with 5 sec. maximum waiting time interval.
+ * The class implements URL-connection with 5 sec. maximum waiting time interval.
  *
  * @author AndrewMs
  * @version 2.0
@@ -23,7 +23,7 @@ public class HttpClient {
         this.url = url;
     }
     /**
-     * Receives a response at the specified url
+     * Receives a response to the specified URL.
      *
      * @return List of strings
      * @throws IOException IO Exception

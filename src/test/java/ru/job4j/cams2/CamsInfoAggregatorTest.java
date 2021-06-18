@@ -1,7 +1,6 @@
-package ru.job4.cams2;
+package ru.job4j.cams2;
 
 import org.junit.Test;
-import java.io.IOException;
 
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;

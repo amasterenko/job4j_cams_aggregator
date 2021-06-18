@@ -1,4 +1,4 @@
-package ru.job4.cams2;
+package ru.job4j.cams2;
 
 import org.junit.Test;
 

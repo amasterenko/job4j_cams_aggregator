@@ -1,4 +1,4 @@
-package ru.job4.cams2;
+package ru.job4j.cams2;
 
 import java.io.IOException;
 
@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.concurrent.*;
 
 /**
- * Collects camera data from the start url in multithreaded mode.
+ * Collects camera data from the start URL in multithreaded mode.
  *
  * @author AndrewMs
  * @version 2.0
@@ -20,10 +20,10 @@ public class CamsInfoAggregator {
     }
 
     /**
-     * Parses first page with source's and token's data URLs.
+     * Parses first page with the source and the token data URLs.
      * Runs an asynchronous task for each URL.
      * Collects the results into a string.
-     * @return List of strings with aggregated cam's information
+     * @return List of strings with aggregated cam's data.
      */
     public String getInfo() {
         HttpClient client = new HttpClient(startUrl);
@@ -65,8 +65,12 @@ public class CamsInfoAggregator {
     }
 
     public static void main(String[] args)  {
-        CamsInfoAggregator agr = new CamsInfoAggregator(
-                "http://www.mocky.io/v2/5c51b9dd3400003252129fb5");
+        if (args.length == 0) {
+            System.out.println("Please, specify the start URL as parameter.");
+            return;
+        }
+        System.out.println("Task started..");
+        CamsInfoAggregator agr = new CamsInfoAggregator(args[0]);
         System.out.println(agr.getInfo());
     }
 }
