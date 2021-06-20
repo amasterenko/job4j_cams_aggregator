@@ -7,7 +7,7 @@ ___
 
 It is necessary to write a program for collecting and aggregating cams data from several web services.  
 
-URL for getting a list of available cams:    
+The list of cams is available at the following URL:  
 http://www.mocky.io/v2/5c51b9dd3400003252129fb5  
 
 >[  
@@ -33,22 +33,22 @@ http://www.mocky.io/v2/5c51b9dd3400003252129fb5
 }  
 ]  
 
-The response format:   
+The format of the response:   
 ● id - number, cam ID.  
 ● sourceDataUrl - string, link to the cam source data.  
 ● tokenDataUrl - string, link to the cam security token.  
 
-The response to _sourceDataUrl_ request:  
+The format of the response to _sourceDataUrl_ request:  
 ● urlType - string, type of link to video-stream. Possible values: "LIVE",
 "ARCHIVE".      
 ● videoUrl - string, link to video-stream.    
 
-The response to _tokenDataUrl_ request:  
+The format of the response to _tokenDataUrl_ request:  
 ● ttl - number, time to live of the token.
 
 The goal is to aggregate data for each cam.  
 
-Expected result:  
+The expected result:  
 >[  
 {  
 "id": 1,  
@@ -81,10 +81,11 @@ Expected result:
 ]  
 
 When writing code, you need to consider potentially large amounts of data.  
-The collecting and aggregating must be performed in several threads and being blocked as little as possible (on I/O operations or during awaiting).  
+The collecting and aggregating must be performed in several threads and being
+blocked as little as possible (on I/O operations or during awaiting).  
 The solution must be published on GitHub and has unit tests.  
 
-### Technologies  
+### Used technologies  
 * Java Core
 * JUnit
 * JaCoCo
