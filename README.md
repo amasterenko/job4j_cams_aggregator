@@ -7,7 +7,7 @@ ___
 
 It is necessary to write a program for collecting and aggregating cams data from several web services.  
 
-The list of cams is available at the following URL:  
+The list of cams is available as a JSON array at the following URL:  
 http://www.mocky.io/v2/5c51b9dd3400003252129fb5  
 
 >[  
@@ -80,13 +80,13 @@ The expected result:
 }  
 ]  
 
-When writing code, you need to consider potentially large amounts of data.  
-The collecting and aggregating must be performed in several threads and being
-blocked as little as possible (on I/O operations or during awaiting).  
-The solution must be published on GitHub and has unit tests.  
+You need to consider potentially large amounts of data.    
+Therefore, the collecting and aggregating must be performed in several threads and being
+blocked as little as possible (on I/O operations or during awaiting process).  
+The solution must be published on GitHub and must include unit tests.  
 
 ### Used technologies  
-* Java Core
+* Java Core (Concurrent, IO, Net)  
 * JUnit
 * JaCoCo
 * Codecov
